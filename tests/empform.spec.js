@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 
-test('test', async ({ page }) => {
+test('Verify Employee form', async ({ page }) => {
   await page.goto('https://hrms.idaraalkhair.sbs/login');
   await page.getByRole('textbox', { name: 'e.g. AIT01-G-26-T-' }).click();
   await page.getByRole('textbox', { name: 'e.g. AIT01-G-26-T-' }).fill('AIT01-G-26-H-0002');
